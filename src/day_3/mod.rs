@@ -87,9 +87,9 @@ fn sum_neighbors(grid: &Vec<Vec<u32>>, x: usize, y: usize) -> u32 {
 
 fn grid_sums(input: u32) -> u32 {
     let mut grid: Vec<Vec<u32>> = Vec::new();
-    for i in 0..200 {
+    for _i in 0..200 {
         let mut row: Vec<u32> = Vec::new();
-        for j in 0..200 {
+        for _j in 0..200 {
             row.push(0);
         }
         grid.push(row);
@@ -163,11 +163,11 @@ fn grid_sums(input: u32) -> u32 {
 // 42 21 22 23 24 25 26
 // 43 44 45 46 47 48 49
 
-fn main() {
+pub fn main() {
     let input = 347991;
     let first = find_manhattan(input);
     let second = grid_sums(input);
 
-    println!("First: {}", first);
-    println!("Second: {}", second);
+    println!("Day 3-1: {}", first);
+    println!("Day 3-2: {}", second);
 }

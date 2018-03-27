@@ -1,4 +1,4 @@
-pphsv ojtou brvhsj cer ntfhlra udeh ccgtyzc zoyzmh jum lugbnk
+pub const INPUT: &'static str = "pphsv ojtou brvhsj cer ntfhlra udeh ccgtyzc zoyzmh jum lugbnk
 vxjnf fzqitnj uyfck blnl impo kxoow nngd worcm bdesehw
 caibh nfuk kfnu llfdbz uxjty yxjut jcea
 qiho qif eupwww avyglnj nxzotsu hio lws
@@ -509,4 +509,4 @@ qddpdk trfxpip pnsowj hidgvnf prur rsrautp aamykfm fysqjmq xwzjane mbmtxhf oqctt
 lfd eops govslp ultbye vrqai hcjkcf snpape
 cbok koumkad otpozb pqcs emilpe wpcyvxd bock
 spjb xkkak anuvk ejoklh nyerw bsjp zxuq vcwitnd xxtjmjg zfgq xkpf
-juo pmiyoh xxk myphio ogfyf dovlmwm moevao qqxidn
+juo pmiyoh xxk myphio ogfyf dovlmwm moevao qqxidn";

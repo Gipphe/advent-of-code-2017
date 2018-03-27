@@ -1,6 +1,6 @@
 use std::iter::FromIterator;
-use std::fs::File;
-use std::io::prelude::Read;
+
+mod input;
 
 fn are_words_valid(phrase: &str) -> bool {
     let words: Vec<&str> = phrase.split_whitespace().collect();
@@ -53,14 +53,9 @@ fn num_valid_phrases_no_anagrams(input: &str) -> u32 {
     count
 }
 
-fn main() {
-    let mut file = File::open("input.txt").expect("File not found");
-    let mut input = String::new();
-    file.read_to_string(&mut input).expect("Error reading file");
-
-    let input = input.trim();
-    let first = num_valid_phrases(&input);
-    let second = num_valid_phrases_no_anagrams(&input);
-    println!("First: {}", first);
-    println!("Second: {}", second);
+pub fn main() {
+    let first = num_valid_phrases(&input::INPUT);
+    let second = num_valid_phrases_no_anagrams(&input::INPUT);
+    println!("Day 4-1: {}", first);
+    println!("Day 4-2: {}", second);
 }

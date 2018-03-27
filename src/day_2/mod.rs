@@ -46,7 +46,7 @@ fn sum_evenly_divisible(input: &str) -> u32 {
     res
 }
 
-fn main() {
+pub fn main() {
     let input = "4168	3925	858	2203	440	185	2886	160	1811	4272	4333	2180	174	157	361	1555
 150	111	188	130	98	673	408	632	771	585	191	92	622	158	537	142
 5785	5174	1304	3369	3891	131	141	5781	5543	4919	478	6585	116	520	673	112
@@ -64,8 +64,8 @@ fn main() {
 219	3933	6626	2137	3222	1637	5312	238	5895	222	154	6649	169	6438	3435	4183
 37	1069	166	1037	172	258	1071	90	497	1219	145	1206	143	153	1067	510
 ";
-    let check = checksum(&input[..]);
-    let sum_even = sum_evenly_divisible(&input[..]);
-    println!("Checksum: {}", check);
-    println!("Sum even: {}", sum_even);
+    let first = checksum(&input[..]);
+    let second = sum_evenly_divisible(&input[..]);
+    println!("Day 2-1: {}", first);
+    println!("Day 2-2: {}", second);
 }
