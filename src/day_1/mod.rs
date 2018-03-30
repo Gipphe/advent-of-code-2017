@@ -32,6 +32,8 @@ pub fn main() {
 
     let first = sum_repeats(&input[..]);
     let second = sum_repeats_halfway_around(&input[..]);
+    assert_eq!(first, 1119, "Day 1-1 is incorrect: {}", first);
+    assert_eq!(second, 1420, "Day 1-2 is incorrect: {}", second);
     println!("Day 1-1: {}", first);
     println!("Day 1-2: {}", second);
 }

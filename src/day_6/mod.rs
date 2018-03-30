@@ -75,6 +75,9 @@ pub fn main() {
 	let input = "5	1	10	0	1	7	13	14	3	12	8	10	7	12	0	6";
 	let first = steps_until_infinite_loop(&input);
 	let second = cycles_between_loops(&input);
+
+	assert_eq!(first, 5042, "Day 6-1 is incorrect: {}", first);
+	assert_eq!(second, 1086, "Day 6-2 is incorrect: {}", second);
 	println!("Day 6-1: {}", first);
 	println!("Day 6-2: {}", second);
 }

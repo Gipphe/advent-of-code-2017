@@ -168,6 +168,8 @@ pub fn main() {
     let first = find_manhattan(input);
     let second = grid_sums(input);
 
+    assert_eq!(first, 480, "Day 3-1 is incorrect: {}", first);
+    assert_eq!(second, 349975, "Day 3-2 is incorrect: {}", second);
     println!("Day 3-1: {}", first);
     println!("Day 3-2: {}", second);
 }

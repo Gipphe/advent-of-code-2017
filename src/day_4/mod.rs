@@ -56,6 +56,9 @@ fn num_valid_phrases_no_anagrams(input: &str) -> u32 {
 pub fn main() {
     let first = num_valid_phrases(&input::INPUT);
     let second = num_valid_phrases_no_anagrams(&input::INPUT);
+
+    assert_eq!(first, 466, "Day 4-1 is incorrect: {}", first);
+    assert_eq!(second, 251, "Day 4-2 is incorrect: {}", second);
     println!("Day 4-1: {}", first);
     println!("Day 4-2: {}", second);
 }

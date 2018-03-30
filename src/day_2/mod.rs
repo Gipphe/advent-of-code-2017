@@ -66,6 +66,8 @@ pub fn main() {
 ";
     let first = checksum(&input[..]);
     let second = sum_evenly_divisible(&input[..]);
+    assert_eq!(first, 51833, "Day 2-1 is incorrect: {}", first);
+    assert_eq!(second, 288, "Day 2-2 is incorrect: {}", second);
     println!("Day 2-1: {}", first);
     println!("Day 2-2: {}", second);
 }

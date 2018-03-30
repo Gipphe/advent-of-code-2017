@@ -41,6 +41,9 @@ fn steps_to_escape_alt(input: &str) -> u32 {
 pub fn main() {
 	let first = steps_to_escape(&input::INPUT);
 	let second = steps_to_escape_alt(&input::INPUT);
+
+	assert_eq!(first, 359348, "Day 5-1 is incorrect: {}", first);
+	assert_eq!(second, 27688760, "Day 5-2 is incorrect: {}", second);
 	println!("Day 5-1: {}", first);
 	println!("Day 5-2: {}", second);
 }
